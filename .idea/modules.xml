@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/Client/Client.iml" filepath="$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/Client/Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI/GUI.iml" filepath="$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI/GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI_02/GUI_02.iml" filepath="$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI_02/GUI_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/Server/Server.iml" filepath="$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/Server/Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/University Assignment , lecture codes and project.iml" filepath="$PROJECT_DIR$/.idea/University Assignment , lecture codes and project.iml" />
+    </modules>
+  </component>
+</project>

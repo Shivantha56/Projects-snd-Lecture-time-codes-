@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI_02/src/lk/ijse/gdse/lib/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI_02/src/lk/ijse/gdse/lib/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI_02/src/lk/ijse/gdse/lib/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI_02/src/lk/ijse/gdse/lib/javafx.base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI_02/src/lk/ijse/gdse/lib/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI_02/src/lk/ijse/gdse/lib/javafx.web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI_02/src/lk/ijse/gdse/lib/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/INtroduction to network programming/Lecture time code/Day_02/GUI_02/src/lk/ijse/gdse/lib/javafx.fxml.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
