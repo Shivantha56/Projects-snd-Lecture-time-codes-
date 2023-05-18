@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -7,32 +8,35 @@ import java.net.Socket;
 public class Main {
     public static void main(String[] args) {
         try {
-            Socket socket = new Socket("localhost", 30000);
-            DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
+            System.out.println("Client");
+            Socket socket = new Socket("localhost" , 30000);
             DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
+            DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            String message = "";
 
+            String message = "";
             String reply = "";
 
-            while (!reply.equals("Bye")) {
 
+            while (!message.equals("Bye")) {
 
                 reply = bufferedReader.readLine();
-                //Cli input
                 dataOutputStream.writeUTF(reply);
-                //write and send
-                dataInputStream.readUTF();
 
+                message = dataInputStream.readUTF();
                 System.out.println(message);
-                //write and send
-                dataOutputStream.flush();
+
             }
+
+            bufferedReader.close();
             dataOutputStream.flush();
-            dataOutputStream.close();
+            dataOutputStream.flush();
+            socket.close();
+
+            System.out.println("task finished");
 
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
         }
     }
 }

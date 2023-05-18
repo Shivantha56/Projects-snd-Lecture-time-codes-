@@ -7,13 +7,14 @@ public class Main {
 
         try {
 
+            System.out.println("Server");
             ServerSocket serverSocket = new ServerSocket(30000);
             Socket socket = serverSocket.accept();
-            System.out.println("Client accepted");
 
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
             DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
 
             String message = "";
             String reply = "";
@@ -21,28 +22,21 @@ public class Main {
 
             while (!message.equals("Bye")){
 
-                System.out.println("A");
 
-                dataInputStream.readUTF();
-
-                System.out.println(dataInputStream.readUTF());
-
-                System.out.println("read");
+                message = dataInputStream.readUTF();
+                System.out.println(message);
 
                 reply = bufferedReader.readLine();
-
                 dataOutputStream.writeUTF(reply);
-
-                dataOutputStream.flush();
 
 
             }
 
+            bufferedReader.close();
             dataOutputStream.flush();
-            dataOutputStream.close();
+            dataOutputStream.flush();
+            socket.close();
 
-
-            System.out.println("Task finished");
 
         } catch (Exception e) {
             System.out.println(e);
